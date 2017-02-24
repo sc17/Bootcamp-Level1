@@ -1,0 +1,43 @@
+html,body{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+header#welcome{
+  display: none;
+}
+
+article#main{
+  width: 50%;
+  position: absolute;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  right: 0;
+  left: 0;
+}
+
+aside.repositories{
+  width: 50%;
+  float: right;
+  padding-top: 20px;
+  max-height: 300px;
+  overflow-y: scroll;
+  text-align: left;
+}
+.repositories > ul{
+  width: 25%;
+}
+
+.text-animate{
+  display: inherit !important;
+  -webkit-animation: animate 3s;
+}
+
+@keyframes animate {
+    from {opacity: 0}
+    to {opacity: 1}
+}
